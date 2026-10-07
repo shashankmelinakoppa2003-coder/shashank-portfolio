@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="specularGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Rectangle -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" filter="url(#shadow)"/>
+  
+  <!-- Subtle Specular Reflection Arc -->
+  <path d="M 6 18 C 6 8, 14 4, 26 4 L 38 4 C 50 4, 58 8, 58 18 C 58 12, 48 8, 32 8 C 16 8, 6 12, 6 18 Z" fill="url(#specularGrad)"/>
+  
+  <!-- Outer Stroke -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+
+  <!-- "S" Letter Monogram -->
+  <text x="32" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-1">S</text>
+</svg>

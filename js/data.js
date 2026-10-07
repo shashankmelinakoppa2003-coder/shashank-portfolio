@@ -22,7 +22,7 @@ const profileData = {
   email: "gowdashashank996@gmail.com",
   location: "Shivamogga, Karnataka",
   githubUrl: "#",
-  linkedinUrl: "#",
+  linkedinUrl: "https://www.linkedin.com/in/shashank-m-b0b5282ab/",
   resumePath: "./resume/Shashank-M-Resume.pdf",
   avatarUrl: "./assets/images/shashank-profile.png"
 };

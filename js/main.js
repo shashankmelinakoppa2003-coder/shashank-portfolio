@@ -623,25 +623,22 @@ function renderResume(profile) {
   const downloadBtns = document.querySelectorAll('.resume-download-btn');
   downloadBtns.forEach(btn => {
     btn.setAttribute('href', resumePath);
-    btn.removeAttribute('download');
     btn.setAttribute('target', '_blank');
-    btn.onclick = (e) => openPdfModal(e, resumePath, `${profile.name} - Resume`);
+    btn.setAttribute('rel', 'noopener noreferrer');
   });
 
   const viewBtns = document.querySelectorAll('.resume-view-btn');
   viewBtns.forEach(btn => {
     btn.setAttribute('href', resumePath);
-    btn.removeAttribute('download');
     btn.setAttribute('target', '_blank');
-    btn.onclick = (e) => openPdfModal(e, resumePath, `${profile.name} - Resume`);
+    btn.setAttribute('rel', 'noopener noreferrer');
   });
 
   const dockResume = document.getElementById('dockResumeLink') || document.querySelector('.floating-dock .dock-item[data-tooltip="Resume"]');
   if (dockResume) {
     dockResume.setAttribute('href', resumePath);
-    dockResume.removeAttribute('download');
     dockResume.setAttribute('target', '_blank');
-    dockResume.onclick = (e) => openPdfModal(e, resumePath, `${profile.name} - Resume`);
+    dockResume.setAttribute('rel', 'noopener noreferrer');
   }
 }
 
